@@ -1,7 +1,6 @@
 import 'dart:collection';
 import 'package:flutter/material.dart';
 import 'package:japanese_word_tokenizer/japanese_word_tokenizer.dart';
-import 'package:kana_kit/kana_kit.dart';
 import 'dart:math';
 
 void main() {
@@ -51,7 +50,6 @@ class _MyHomePageState extends State<MyHomePage> {
     // i-adjectives
     r'(?:痒|かゆ)い' : 'かええ',
   });
-  final KanaKit _kanaKit = const KanaKit();
   String _output = '';
 
   void _convertText(String input) {
